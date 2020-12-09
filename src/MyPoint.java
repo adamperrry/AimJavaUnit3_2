@@ -19,20 +19,20 @@ public class MyPoint {
     public static double distance(MyPoint mp1, MyPoint mp2) {
         double xDiffSquared = Math.pow(mp1.getX() - mp2.getX(), 2);
         double yDiffSquared = Math.pow(mp1.getY() - mp2.getY(), 2);
-        return Math.sqrt( xDiffSquared + yDiffSquared);
+        return Math.sqrt(xDiffSquared + yDiffSquared);
     }
 
     // instance member methods
     public double distance(int xCoord, int yCoord) {
         double xDiffSquared = Math.pow(xCoord - getX(), 2);
         double yDiffSquared = Math.pow(yCoord - getY(), 2);
-        return Math.sqrt( xDiffSquared + yDiffSquared);
+        return Math.sqrt(xDiffSquared + yDiffSquared);
     }
 
     public double distance(MyPoint p) {
         double xDiffSquared = Math.pow(p.getX() - getX(), 2);
         double yDiffSquared = Math.pow(p.getY() - getY(), 2);
-        return Math.sqrt( xDiffSquared + yDiffSquared);
+        return Math.sqrt(xDiffSquared + yDiffSquared);
     }
 
     // getters and setters for instances of MyPoint
@@ -55,7 +55,7 @@ public class MyPoint {
     // toString
     @Override
     public String toString() {
-        return String.format("(%d,%d)", getX(),getY());
+        return String.format("(%d,%d)", getX(), getY());
     }
 
 }
